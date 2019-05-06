@@ -12,3 +12,4 @@ while 1:  #Loop principal
 		if event.type == pygame.QUIT: sys.exit()
 	screen.fill(black)
 	pygame.display.flip()
+	#hola
