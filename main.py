@@ -1,16 +1,33 @@
+#Librerias
 import sys, pygame
+
+#Variables
+ratio = width, height = 800, 500 
+fondo = 255,255,255
+
+#Clases
 pygame.init()
+pantalla = pygame.display.set_mode(ratio) 
 
-size = width, height = 320, 240 
-speed = [2,2]
-black = 0, 0, 0
+#Funcion del juego
+def juego(): 
+	hola = 1
 
-screen = pygame.display.set_mode(size) #Clase ventana
-
-while 1:  #Loop principal 
-	for event in pygame.event.get(): #Evento test
-		if event.type == pygame.QUIT: sys.exit()
-	screen.fill(black)
+#Funcion de sprites
+def renderizacion(): 
 	pygame.display.flip()
-	#hola
-	#EFICIENCIAygygy
+
+
+pantalla.fill(fondo)
+
+#Bucle principal
+while 1:  
+
+#Evento de salida del bucle
+	for event in pygame.event.get(): 
+		if event.type == pygame.QUIT: sys.exit() 
+			
+#Funciones principales
+	juego()
+	renderizacion()
+	 
