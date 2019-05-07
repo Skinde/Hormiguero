@@ -12,13 +12,14 @@ archivo = str(os.getcwd())
 
 #Imagenes y Sprites
 Icono = pygame.image.load(archivo+"\icono.png").convert_alpha()
-
+Logo = pygame.image.load(archivo+"\logo.png").convert_alpha()
 #Funcion del juego
 def juego(): 
 	hola = 1
 
 #Funcion de sprites
 def renderizacion():
+	pantalla.blit(Logo,Logo.get_rect())
 	pygame.display.flip()
 
 #Ordenes de entrada
