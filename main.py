@@ -41,8 +41,11 @@ Logo = cargar("logo.png")
 pygame.display.set_caption("Hormiguero")
 pygame.display.set_icon(Icono)
 pantalla.fill(blanco)
+
 for n in range(450):
-	
+	for x in range(800):
+		mapa[n][x] = "Tierra"
+
 
 #Bucle principal
 while 1:  
