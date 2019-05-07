@@ -13,7 +13,7 @@ pygame.init()
 pantalla = pygame.display.set_mode(ratio)
 
 
-#Imagenes y Sprites
+#Funciones Personales
 def cargar(imagen):
 	return pygame.image.load(archivo+"\Sprites\\"+imagen)
 def dibujar(imagen,x,y):
