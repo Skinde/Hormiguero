@@ -13,6 +13,7 @@ archivo = str(os.getcwd())
 #Imagenes y Sprites
 Icono = pygame.image.load(archivo+"\icono.png").convert_alpha()
 Logo = pygame.image.load(archivo+"\logo.png").convert_alpha()
+	
 #Funcion del juego
 def juego(): 
 	hola = 1
