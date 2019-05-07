@@ -7,7 +7,7 @@ blanco = 255,255,255
 negro = 0,0,0
 fase_dejuego = 0
 archivo = str(os.getcwd())
-mapa[800][450]
+mapa[800][450] = "tierra"
 #Clases
 pygame.init()
 pantalla = pygame.display.set_mode(ratio)
@@ -32,6 +32,11 @@ def renderizacion():
 		pygame.display.flip()
 		time.sleep(2)
 		pantalla.fill(blanco)
+	if fase_dejuego == 1: 
+		for n in range(450):
+			for x in range(800):
+				dibujar_rectangulo((78,59,49),x,n,1,1)
+
 	pygame.display.flip() #Actualiza la pantalla
 
 #Ordenes de entrada
