@@ -35,7 +35,8 @@ def renderizacion():
 	if fase_dejuego == 1: 
 		for n in range(450):
 			for x in range(800):
-				dibujar_rectangulo((78,59,49),x,n+50,1,1)
+				if mapa[n][x] == 1:
+					dibujar_rectangulo((78,59,49),x,n+50,1,1)
 
 	pygame.display.flip() #Actualiza la pantalla
 
@@ -49,7 +50,7 @@ pantalla.fill(blanco)
 
 for n in range(450):
 	for x in range(800):
-		mapa[n][x] = "Tierra"
+		mapa[n][x] = 1
 
 
 #Bucle principal
