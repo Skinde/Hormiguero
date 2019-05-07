@@ -27,10 +27,8 @@ def juego():
 
 #Funcion de sprites
 def renderizacion():
-	if fase_dejuego == 0:
-		dibujar_rectangulo(negro,0,0,100,200)
-		dibujar(Logo,250,125)
-	pygame.display.flip()
+	
+	pygame.display.flip() #Actualiza la pantalla
 
 #Ordenes de entrada
 Icono = cargar("icono.png")
