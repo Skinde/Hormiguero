@@ -4,26 +4,32 @@ import sys, pygame, os
 #Variables
 ratio = width, height = 800, 500 
 fondo = 255,255,255
-game_phase = 0
+fase_dejuego = 0
 #Clases
 pygame.init()
 pantalla = pygame.display.set_mode(ratio)
 archivo = str(os.getcwd())
 
 #Imagenes y Sprites
-Icono = pygame.image.load(archivo+"\icono.png").convert_alpha()
-Logo = pygame.image.load(archivo+"\logo.png").convert_alpha()
-	
+def cargar(imagen):
+	return pygame.image.load(archivo+"\Sprites\\"+imagen)
+def dibujar(imagen,x,y):
+	pantalla.blit(imagen,(x,y))
+
+
 #Funcion del juego
 def juego(): 
 	hola = 1
 
 #Funcion de sprites
 def renderizacion():
-	pantalla.blit(Logo,Logo.get_rect())
+	if fase_dejuego == 0:
+		dibujar(Logo,250,125)
 	pygame.display.flip()
 
 #Ordenes de entrada
+Icono = cargar("icono.png")
+Logo = cargar("logo.png")
 pygame.display.set_caption("Hormiguero")
 pygame.display.set_icon(Icono)
 pantalla.fill(fondo)
