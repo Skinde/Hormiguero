@@ -1,7 +1,5 @@
-#Librerias
 import sys, pygame, os, time, importlib
 
-#Variables
 ratio = width, height = 800, 500 
 blanco = 255,255,255
 negro = 0,0,0
@@ -13,7 +11,7 @@ pygame.init()
 pantalla = pygame.display.set_mode(ratio)
 
 
-#Imagenes y Sprites
+
 def cargar(imagen):
 	return pygame.image.load(archivo+"\Sprites\\"+imagen)
 def dibujar(imagen,x,y):
@@ -21,25 +19,13 @@ def dibujar(imagen,x,y):
 def dibujar_rectangulo(color,x,y,largo,ancho):
 	pygame.draw.rect(pantalla, color, (x,y,largo,ancho))
 
-#Funcion del juego
-exec(open(archivo+"\Juego.py").read())
-#Funcion de sprites
-exec(open(archivo+"\Renderizacion.py").read())
-#Ordenes de entrada
-exec(open(archivo+"\Inicio.py").read())
+Utec = cargar("utec.png")
+Icono = cargar("icono.png")
+Logo = cargar("logo.png")
+pygame.display.set_caption("Hormiguero")
+pygame.display.set_icon(Icono)
+pantalla.fill(blanco)
 
-
-#Bucle principal
-while 1:  
-#Evento de salida del bucle
-
-	for event in pygame.event.get():
-		if event.type == pygame.QUIT: 
-			sys.exit()
-#Funciones principales
-	juego()
-	renderizacion()
-	if fase_dejuego < 3:
-		fase_dejuego += 1
-
-	 
+for n in range(450):
+	for x in range(800):
+		mapa[n][x] = 1
