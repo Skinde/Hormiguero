@@ -1,3 +1,3 @@
 # Hormiguero
 Este proyecto fue creado por Miguel Angel Lama, Jean Paul y Diego Paredes el 5/6/19
-para el proyecto final de ciclo uno en UTEC. Aunque, todo el código sea open source tenemos la obligación de reservar nuestro derecho a la propiedad intelectual en la forma de código y utilización de esta exclusivamente por los integrantes mencionados al principio para la presentación (es decir no se copien). Por otro lado, todas las imágenes no son de nuestra propiedad y por tanto no estan sujetas a nuestro control. Ademas, fuera del alcance de la utilización del proyecto en la universidad cualquier persona es libre de crear su propia version del proyecto.
+para el proyecto final de ciclo uno en UTEC.
