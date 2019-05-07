@@ -3,7 +3,8 @@ import sys, pygame, os
 
 #Variables
 ratio = width, height = 800, 500 
-fondo = 255,255,255
+blanco = 255,255,255
+negro = 0,0,0
 fase_dejuego = 0
 archivo = str(os.getcwd())
 
@@ -17,7 +18,8 @@ def cargar(imagen):
 	return pygame.image.load(archivo+"\Sprites\\"+imagen)
 def dibujar(imagen,x,y):
 	pantalla.blit(imagen,(x,y))
-
+def dibujar_rectangulo(color,x,y,largo,ancho):
+	pygame.draw.rect(pantalla, color, (x,y,largo,ancho))
 
 #Funcion del juego
 def juego(): 
@@ -26,6 +28,7 @@ def juego():
 #Funcion de sprites
 def renderizacion():
 	if fase_dejuego == 0:
+		dibujar_rectangulo(negro,0,0,100,200)
 		dibujar(Logo,250,125)
 	pygame.display.flip()
 
@@ -34,7 +37,7 @@ Icono = cargar("icono.png")
 Logo = cargar("logo.png")
 pygame.display.set_caption("Hormiguero")
 pygame.display.set_icon(Icono)
-pantalla.fill(fondo)
+pantalla.fill(blanco)
 
 #Bucle principal
 while 1:  
