@@ -62,6 +62,6 @@ while 1:
 #Funciones principales
 	juego()
 	renderizacion()
-	if fase_dejuego == 0:
-		fase_dejuego = 1
+	if fase_dejuego < 3:
+		fase_dejuego += 1
 	 
