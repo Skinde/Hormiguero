@@ -5,10 +5,12 @@ import sys, pygame, os
 ratio = width, height = 800, 500 
 fondo = 255,255,255
 fase_dejuego = 0
+archivo = str(os.getcwd())
+
 #Clases
 pygame.init()
 pantalla = pygame.display.set_mode(ratio)
-archivo = str(os.getcwd())
+
 
 #Imagenes y Sprites
 def cargar(imagen):
