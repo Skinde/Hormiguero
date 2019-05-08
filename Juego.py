@@ -1,5 +1,6 @@
 import main, random
-random.seed(12312836)
+from datetime import datetime
+random.seed(datetime.now())
 
 def juego(): 
 	if fase_dejuego == 0:
