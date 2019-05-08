@@ -1,5 +1,6 @@
 #Librerias
-import sys, pygame, os, time, importlib
+import sys, pygame, os, time, importlib, random
+from datetime import datetime
 
 #Variables
 ratio = width, height = 800, 500 

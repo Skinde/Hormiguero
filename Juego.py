@@ -1,16 +1,19 @@
-import main, random
-from datetime import datetime
-random.seed(datetime.now())
+def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 
-def juego(): 
-	if fase_dejuego == 0:
+	#Se ejecuta cuando el programa empieza
+	if fase_dejuego == 0: 
+		# se declara posicion (x,y) de la hormiga
 		global hormigax 
 		global hormigay 
 		hormigax = 100
 		hormigay = 45
-	movex = random.randint(0, 2)
+		
+	#Generacion de numeros aleatorios
+	movex = random.randint(0, 2) 
 	movey = random.randint(0, 2)
-	if movex == 0:
+
+	#Movimiento de la hormiga
+	if movex == 0: 
 		hormigax -= 5
 	if movex == 2:
 		hormigax += 5
