@@ -8,6 +8,8 @@ negro = 0,0,0
 fase_dejuego = 0
 archivo = str(os.getcwd())
 mapa = [[0 for x in range(800)] for y in range(450)]
+global hormigax
+global hormigay
 #Clases
 pygame.init()
 pantalla = pygame.display.set_mode(ratio)
@@ -43,3 +45,4 @@ while 1:
 		fase_dejuego += 1
 
 	 
+randint(0, hormigax)
