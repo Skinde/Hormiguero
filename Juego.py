@@ -13,6 +13,12 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	movey = random.randint(0, 2)
 
 	#Movimiento de la hormiga
+	if hormigay >= 45:
+		movey = 1
+	if hormigax >=800:
+		movex = 1
+		
+	
 	if movex == 0: 
 		hormigax -= 5
 	if movex == 2:
@@ -21,6 +27,10 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 		hormigay -= 5
 	if movey == 2:
 		hormigay += 5
+	if movey == 1:
+		hormigay += 0
+	if movex == 1:
+		hormigax += 0
 
 
 
