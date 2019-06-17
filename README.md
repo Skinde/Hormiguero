@@ -7,9 +7,13 @@ Nuestro proyecto consiste en una simulación de selección narural en base al co
 Como en la vida real nuestra Hormiga reina tendrá la capacidad de elegir, dependiendo de las necesidades,que tipo de hormiga va a nacer.
 Existen 5 tipos de Hormigas:
 Princesas: Nacen con todo los conocimientos de la Hormiga reina anterior a su nacimiento.
+
 Zanganos: Solo procrean con las princesas para volverlas reinas.
+
 Obreras: Cavar, transportar, cuidar de los huevos, etc.
+
 Nurses: Como las obreras pero con crecimiento acelerado.
+
 Soldados: 3 veces el tamaño de una obrera, atacan o cazan a los demás insectos y protegen la colonia
 
 
@@ -17,7 +21,9 @@ Del mismo modo que nuestra colonia de hormigas va a estar adecuandose al ambient
 
 Features:
 +Mundo creado aleatoriamente que cuenta con clima y fauna
+
 +Una o varias Hormigas Reina con inteligencia artificial
+
 +Un mundo que reacciona a los actos de tus hormigas
 
 Toda la Información sobre las variables, funciones, etc se encuentra en:
