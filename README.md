@@ -17,12 +17,5 @@ Enfermeras: Como las obreras pero con crecimiento acelerado.
 
 Soldados: 3 veces el tamaño de una obrera, atacan o cazan a los demás insectos y protegen la colonia
 
-Features:
-+Mundo creado aleatoriamente que cuenta con clima y fauna
-
-+Una o varias Hormigas Reina con inteligencia artificial
-
-+Un mundo que reacciona a los actos de tus hormigas
-
 Toda la Información sobre las variables, funciones, etc se encuentra en:
 https://github.com/Skinde/Hormiguero/wiki
