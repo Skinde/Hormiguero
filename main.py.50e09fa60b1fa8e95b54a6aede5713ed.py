@@ -35,6 +35,7 @@ exec(open(archivo+"\Inicio.py").read())
 #Bucle principal
 while 1:  
 #Evento de salida del bucle
+	n = time.time()
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT: 
 			sys.exit()
@@ -44,5 +45,6 @@ while 1:
 	renderizacion()
 	if fase_dejuego < 3:
 		fase_dejuego += 1
+	print(time.time())
 	
 	 

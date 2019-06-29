@@ -7,30 +7,7 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 		global hormigay 
 		hormigax = 100
 		hormigay = 45
-		
-	#Generacion de numeros aleatorios
-	movex = random.randint(0, 2) 
-	movey = random.randint(0, 2)
 
-	#Movimiento de la hormiga
-	if hormigay >= 45:
-		movey = 1
-	if hormigax >=800:
-		movex = 1
-		
-	
-	if movex == 0: 
-		hormigax -= 5
-	if movex == 2:
-		hormigax += 5
-	if movey == 0 and hormigay > 45:
-		hormigay -= 5
-	if movey == 2:
-		hormigay += 5
-	if movey == 1:
-		hormigay += 0
-	if movex == 1:
-		hormigax += 0
 
 
 
