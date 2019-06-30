@@ -22,4 +22,4 @@ if fase_dejuego == 0:
 # probabilidad de moverse a la derecha, probabilidad de moverse abajo a la derecha etc.. va en sentido
 # del reloj]
 
-hormigas = []
+hormigas = [250,400,]
