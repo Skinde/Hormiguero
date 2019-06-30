@@ -29,5 +29,8 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 			if jo == 7:
 				hormigas[r][0] += 1
 				hormigas[r][1] -= 1
-
+	for i in range(len(hormigas)):
+		for o in range(len(comida)):
+			if(hormigas[i]==comida[o]):
+				del comida[o]
 		
