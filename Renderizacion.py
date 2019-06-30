@@ -5,23 +5,25 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	del verdosidad[:]
 	for n in range(20):
 		verdosidad.append([pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]+1))[1]/200,
-                     pantalla.get_at(
-                    (hormigas[n][0], hormigas[n][0]+1))[1]/200,
-                    pantalla.get_at(
-                    (hormigas[n][0]+1, hormigas[n][0]+1))[1]/200,
-                    pantalla.get_at(
-                    (hormigas[n][0]-1, hormigas[n][0]))[1]/200,
-                    pantalla.get_at(
-                    (hormigas[n][0]+1, hormigas[n][0]))[1]/200,
-                    pantalla.get_at(
-                    (hormigas[n][0]-1, hormigas[n][0]-1))[1]/200,
-                    pantalla.get_at(
-                    (hormigas[n][0], hormigas[n][0]-1))[1]/200,
-                    pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]-1))[1]/200])
+                           pantalla.get_at((hormigas[n][0], hormigas[n][0]+1))[1]/200,
+                           pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]+1))[1]/200,
+                           pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]))[1]/200,
+                           pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]))[1]/200,
+                           pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]-1))[1]/200,
+                           pantalla.get_at((hormigas[n][0], hormigas[n][0]-1))[1]/200,
+                           pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]-1))[0]/200])
+        rojosidad.append([pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]+1))[0]/200,
+                          pantalla.get_at((hormigas[n][0], hormigas[n][0]+1))[0]/200,
+                          pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]+1))[0]/200,
+                          pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]))[0]/200,
+                          pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]))[0]/200,
+                          pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]-1))[0]/200,
+                          pantalla.get_at((hormigas[n][0], hormigas[n][0]-1))[0]/200,
+                          pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]-1))[0]/200])
 
 	#Dibujo de comida
 	for c in range(len(comida)):
-		dibujar_rectangulo(blanco, comida[c][0], comida[c][1], 0, 1)
+		dibujar_rectangulo((255,0,0), comida[c][0], comida[c][1], 0, 1)
 	
 	#Actualizacion de la ventana
 	pygame.display.flip()
