@@ -24,5 +24,4 @@ probmovhor = []
 
 for r in range(20):
 	hormigas.append([200+r,200+r])
-for n in range(20):
-	probmovhor.append([[pantalla.get_at(((hormigas[n][0])-1, (hormigas[n][1])-1))]])
+
