@@ -33,7 +33,7 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 
 	#Dibujo de comida
 	for c in range(len(comida)):
-		dibujar_rectangulo((255,0,0), comida[c][0], comida[c][1], 0, 1)
+		dibujar_rectangulo((200,0,0), comida[c][0], comida[c][1], 0, 1)
 	
 	#Actualizacion de la ventana
 	pygame.display.flip()
