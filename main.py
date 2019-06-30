@@ -29,9 +29,11 @@ def uwu(list):
     for ywy in range(len(list)):
         if omaewa == list[ywy]:
             rando.append(ywy)
-    awa = random.randint( 0 ,len(rando)-1)
-
-    return int(rando[int(awa)])
+    if len(rando) > 0:
+    	awa = random.randint( 0 ,len(rando)-1)
+    	return int(rando[int(awa)])
+    else:
+        return 0
 
 
 
