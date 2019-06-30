@@ -38,7 +38,12 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 						hormigas[le][2]=1
 		except:
 			hola = 0
-		
+	
+	for bordero in range(len(hormigas)):
+		if hormigas[bordero][0] == 999 or hormigas[bordero][1] == 999 or hormigas[bordero][0] == 1 or hormigas[bordero][1] == 1:
+			hormigas[bordero][0] = 400
+			hormigas[bordero][1] = 250
+
 		for i in range(len(hormigas)):
 			if(hormigas[i][2]!=1):
 				historial[i].append(hormigas[i])
