@@ -28,7 +28,7 @@ calculadora = []
 comida = []
 
 for _ in range(50):
-	comida.append([(random.randint(700,800)), (random.randint(400,500))])
+	comida.append([(random.randint(0,1000)), (random.randint(0,1000))])
 
 for r in range(20):
 	hormigas.append([400+r,250+r])
