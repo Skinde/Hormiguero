@@ -14,7 +14,7 @@ pantalla.fill(blanco)
 
 
 if fase_dejuego == 0:
-		dibujar(Utec, 285, 140)
+		dibujar(Utec, 385, 250)
 		pygame.display.flip()
 		time.sleep(2)
 
