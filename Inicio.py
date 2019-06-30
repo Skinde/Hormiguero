@@ -18,8 +18,11 @@ if fase_dejuego == 0:
 		time.sleep(2)
 
 #Informacion de todas las hormigas
-# [x,y,probabilidad de moverse arriba a la izquierda, probabilidad de moverse arriba, probabilidad de moverse arriba a la derecha
-# probabilidad de moverse a la derecha, probabilidad de moverse abajo a la derecha etc.. va en sentido
-# del reloj]
 
-hormigas = [250,400,]
+hormigas = []
+probmovhor = []
+
+for r in range(20):
+	hormigas.append([200+r,200+r])
+for n in range(20):
+	probmovhor.append([[pantalla.get_at(((hormigas[n][0])-1, (hormigas[n][1])-1))]])
