@@ -9,7 +9,7 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 				f = random.randint(0,1)
 				calculadora.append(f*verdosidad[r][l])
 			jo = calculadora.index(max(calculadora))
-			print("pipo")
+			print(jo)
 			if jo == 0:
 				hormigas[r][0] -= 1
 				hormigas[r][1] += 1
