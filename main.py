@@ -24,6 +24,9 @@ def dibujar(imagen,x,y):
 def dibujar_rectangulo(color,x,y,largo,ancho):
 	pygame.draw.rect(pantalla, color, (x,y,largo,ancho))
 
+
+
+
 #Funcion del juego
 exec(open(archivo+"\Juego.py").read())
 #Funcion de sprites

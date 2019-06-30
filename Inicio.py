@@ -22,7 +22,8 @@ if fase_dejuego == 0:
 probabilidad = []
 hormigas = []
 verdosidad = []
-
+rojosidad = []
+calculadora = []
 #Comida
 comida = []
 
