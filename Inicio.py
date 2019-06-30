@@ -24,6 +24,7 @@ hormigas = []
 verdosidad = []
 rojosidad = []
 calculadora = []
+historial=[]
 #Comida
 comida = []
 
@@ -38,4 +39,8 @@ for r in range(20):
 
 for _ in range(1):
 	entrada.append([400, 250])
+
+for i in range(len(hormigas)):
+	historial.append([])
+
 

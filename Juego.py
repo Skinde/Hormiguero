@@ -36,9 +36,13 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 					if hormigas[le][0] == comida[li][0] and hormigas[le][1]==comida[li][1]:
 						comida.remove([comida[li][0],comida[li][1]])
 						hormigas[le][2]=1
-						print(hormigas[le])
 		except:
 			hola = 0
-				
+		
+		for i in range(len(hormigas)):
+			if(hormigas[i][2]!=1):
+				historial[i].append(hormigas[i])
+			
+		print(historial)
 				
 		
