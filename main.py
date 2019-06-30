@@ -3,12 +3,12 @@ import sys, pygame, os, time, importlib, random
 from datetime import datetime
 
 #Variables
-ratio = width, height = 800, 500 
+ratio = width, height = 1000, 1000
 blanco = 255,255,255
 negro = 0,0,0
 fase_dejuego = 0
 archivo = str(os.getcwd())
-mapa = [[0 for x in range(800)] for y in range(500)]
+mapa = [[0 for x in range(1000)] for y in range(1000)]
 global hormigax
 global hormigay
 #Clases
