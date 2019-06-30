@@ -29,4 +29,5 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 			if jo == 7:
 				hormigas[r][0] += 1
 				hormigas[r][1] -= 1
+
 		
