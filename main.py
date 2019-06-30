@@ -8,7 +8,7 @@ blanco = 255,255,255
 negro = 0,0,0
 fase_dejuego = 0
 archivo = str(os.getcwd())
-mapa = [[0 for x in range(800)] for y in range(450)]
+mapa = [[0 for x in range(800)] for y in range(500)]
 global hormigax
 global hormigay
 #Clases

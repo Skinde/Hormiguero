@@ -18,9 +18,9 @@ if fase_dejuego == 0:
 		time.sleep(2)
 
 #Informacion de todas las hormigas
-
+probabilidad = []
 hormigas = []
-probmovhor = []
+verdosidad = []
 
 for r in range(20):
 	hormigas.append([200+r,200+r])
