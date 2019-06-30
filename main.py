@@ -23,6 +23,15 @@ def dibujar(imagen,x,y):
 	pantalla.blit(imagen,(x,y))
 def dibujar_rectangulo(color,x,y,largo,ancho):
 	pygame.draw.rect(pantalla, color, (x,y,largo,ancho))
+def uwu(list):
+    rando = []
+    omaewa = int(max(list))
+    for ywy in range(len(list)):
+        if omaewa == list[ywy]:
+            rando.append(ywy)
+    awa = random.randint( 0 ,len(rando)-1)
+
+    return int(rando[int(awa)])
 
 
 
