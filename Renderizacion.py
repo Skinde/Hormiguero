@@ -18,9 +18,13 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
                     pantalla.get_at(
                     (hormigas[n][0], hormigas[n][0]-1))[1]/200,
                     pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]-1))[1]/200])
+
+	#Dibujo de comida
+	for c in range(len(comida)):
+		dibujar_rectangulo(blanco, comida[c][0], comida[c][1], 0, 1)
+	
 	#Actualizacion de la ventana
 	pygame.display.flip()
 	pantalla.fill((120, 200, 80))
 
 
-	
