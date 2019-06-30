@@ -30,5 +30,5 @@ for _ in range(50):
 	comida.append([(random.randint(700,800)), (random.randint(400,500))])
 
 for r in range(20):
-	hormigas.append([200+r,200+r])
+	hormigas.append([400+r,250+r])
 
