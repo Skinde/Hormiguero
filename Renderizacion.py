@@ -15,7 +15,6 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	del verdosidad[:]
 	del rojosidad[:]
 	for n in range(20):
-		print(hormigas[n][0], hormigas[n][0])
 		verdosidad.append([pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]+1))[1]/200, pantalla.get_at((hormigas[n][0], hormigas[n][0]+1))[1]/200, pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]+1))[1]/200, pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]))
                         [1]/200, pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]))[1]/200, pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]-1))[1]/200, pantalla.get_at((hormigas[n][0], hormigas[n][0]-1))[1]/200, pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]-1))[1]/200])
 		rojosidad.append([pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]+1))[0]/200, pantalla.get_at((hormigas[n][0], hormigas[n][0]+1))[0]/200, pantalla.get_at((hormigas[n][0]+1, hormigas[n][0]+1))[0]/200, pantalla.get_at((hormigas[n][0]-1, hormigas[n][0]))

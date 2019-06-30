@@ -29,12 +29,14 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 			if jo == 7:
 				hormigas[r][0] += 1
 				hormigas[r][1] -= 1
-	if fase_dejuego != 0:
-		for e in range(len(hormigas)):
-			for f in range(len(rojosidad[e])):
-				if rojosidad[e][f] == 1:
-					comida.remove([hormigas[e][0],hormigas[e][1]])
-					print("hola",ee)
+	if fase_dejuego !=0:
+		try:
+			for le in range(len(hormigas)):
+				for li in range(len(comida)):
+					if hormigas[le] == comida[li]:
+						comida.remove([comida[li][0],comida[li][1]])
+		except:
+			hola = 0
 				
 				
 		

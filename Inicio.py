@@ -27,7 +27,7 @@ calculadora = []
 #Comida
 comida = []
 
-for _ in range(50):
+for _ in range(100):
 	comida.append([(random.randint(0,1000)), (random.randint(0,1000))])
 
 for r in range(20):
