@@ -9,6 +9,9 @@ def probabilidad(x,y):
         sumatoria=sumatoria+probabilidad()
 
 def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
+		#Dibujo Entrada
+	for _ in range(len(entrada)):
+		dibujar_rectangulo((128, 64, 0), entrada[_][0], entrada[_][1], 10, 10)
 	#Dibujo de la hormiga 
 	for d in range(len(hormigas)):
 		dibujar_rectangulo(negro, hormigas[d][0], hormigas[d][1], 4, 4)
@@ -22,7 +25,7 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	#Dibujo de comida
 	for c in range(len(comida)):
 		dibujar_rectangulo((200,0,0), comida[c][0], comida[c][1], 3, 3)
-	
+
 	#Actualizacion de la ventana
 	pygame.display.flip()
 	pantalla.fill((120, 200, 80))
