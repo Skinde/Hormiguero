@@ -43,19 +43,11 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 		if hormigas[bordero][0] == 999 or hormigas[bordero][1] == 999 or hormigas[bordero][0] == 1 or hormigas[bordero][1] == 1:
 			hormigas[bordero][0] = 400
 			hormigas[bordero][1] = 250
-			historial[bordero] = []
 			hormigas[bordero][2] = 0
 
-		for i in range(len(hormigas)):
-			if(hormigas[i][2]==0):
-				historial[i].append(hormigas[i][:2])
+			
 			#Cuando llega la colonia entrega la colonia y se elimina su historial 
-			else:
-				for o in range(len(historial[i])-1,0,-1):
-					hormigas[i][0]=historial[i][o][0]
-					hormigas[i][1]=historial[i][o][1]
-				historial[i] = []
-				hormigas[i][2] = 0
+
 				
 				
 		
