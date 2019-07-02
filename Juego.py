@@ -4,12 +4,15 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 		if mapa[hormigas[d][1]][hormigas[d][0]] < 1:
 		    mapa[hormigas[d][1]][hormigas[d][0]] += 0.01
 	if fase_dejuego != 0:
+		#Decide en que direccion van las hormigas
 		for r in range(len(hormigas)):
 			del calculadora[:]
 			for l in range(len(verdosidad[r])):
 				f = random.randint(0,1)
 				calculadora.append(f*verdosidad[r][l])
+			#Si se han elegido valores random iguales decide aleatoriamente entre estos
 			jo = uwu(calculadora)
+			#actualiza su pocision
 			if jo == 0:
 				hormigas[r][0] -= 1
 				hormigas[r][1] += 1
@@ -30,6 +33,7 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 			if jo == 7:
 				hormigas[r][0] += 1
 				hormigas[r][1] -= 1
+		#si cogen comida eliminan la comida del mapa
 	if fase_dejuego !=0:
 		try:
 			for le in range(len(hormigas)):
@@ -39,7 +43,7 @@ def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 						hormigas[le][2]=1
 		except:
 			hola = 0
-	
+	#Si se salen del borde las devuelve al centro
 	for bordero in range(len(hormigas)):
 		if hormigas[bordero][0] == 999 or hormigas[bordero][1] == 999 or hormigas[bordero][0] == 1 or hormigas[bordero][1] == 1:
 			hormigas[bordero][0] = 400

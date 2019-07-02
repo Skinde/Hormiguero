@@ -16,11 +16,7 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	#Dibujo de la hormiga 
 	for d in range(len(hormigas)):
 		dibujar_rectangulo(negro, hormigas[d][0], hormigas[d][1], 4, 4)
-<<<<<<< HEAD
 	
-=======
-	#Lee los colores que estan al lado de la hirmiga 
->>>>>>> eac0cd42e7ee236d36dc9599c5eea1ac952327c5
 	del verdosidad[:]
 	del rojosidad[:]
 	for n in range(20):
