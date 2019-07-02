@@ -1,3 +1,4 @@
+#Por Lama,Huby,Paredes
 def movimiento(hormigas):
     espacios={"ul":0,"u":0,"ur":0,"l":0,"r":0,"dl":0,"d":0,"dr":0}
     for i in espacios:
@@ -15,6 +16,7 @@ def renderizacion():  # PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	#Dibujo de la hormiga 
 	for d in range(len(hormigas)):
 		dibujar_rectangulo(negro, hormigas[d][0], hormigas[d][1], 4, 4)
+	
 	del verdosidad[:]
 	del rojosidad[:]
 	for n in range(20):

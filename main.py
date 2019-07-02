@@ -1,3 +1,4 @@
+#Por Lama,Huby,Paredes
 #Librerias
 import sys, pygame, os, time, importlib, random
 from datetime import datetime

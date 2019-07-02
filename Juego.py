@@ -1,3 +1,4 @@
+#Por Lama,Huby,Paredes
 def juego(): #PONGAN SU CODIGO AQUI ESTO SE EJECUTA EN UN BUCLE
 	for d in range(len(hormigas)):
 		if mapa[hormigas[d][1]][hormigas[d][0]] < 1:

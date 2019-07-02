@@ -1,3 +1,4 @@
+#Por Lama,Huby,Paredes
 import random 
 #Semilla aleatoria
 random.seed(datetime.now())
